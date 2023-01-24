@@ -1,0 +1,109 @@
+/* font-size settings */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* App settings */
+.App {
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.App aside {
+  flex: 1;
+  max-width: 20%;
+  color: white;
+  border-right: 2px solid grey;
+  min-height: 85vh;
+}
+
+.App main {
+  flex: 4;
+  min-height: 85vh;
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+/*Header settings */
+header {
+  min-height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: linear-gradient(to bottom, rgba(189, 23, 11, 1), #0a0403);
+  border-bottom: 1px solid grey;
+}
+@media (max-width: 1025px) {
+  header {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+header h1 {
+  margin: 0;
+  padding: 1vw;
+  text-shadow: 2px 2px 2px black;
+  flex: 2;
+}
+
+header nav {
+  flex: 2;
+  display: flex;
+}
+
+header nav div {
+  padding: 2vw;
+  margin: 0.5vw;
+  text-shadow: 1px 1px 1px black;
+}
+
+header nav div:hover {
+  background: linear-gradient(to bottom, rgba(189, 23, 11, 0.5), #0a0403);
+}
+
+/* Cars component styling */
+
+.carsContainer {
+  color: white;
+  background-color: red;
+}
+
+/* AddCar component styling */
+
+.addCarContainer {
+  color: white;
+  background-color: red;
+}
+
+/* Contact component styling */
+
+.contactContainer {
+  color: white;
+  background-color: red;
+}
+
+/* Info component styling */
+
+.infoContainer {
+  color: white;
+  background-color: red;
+}
