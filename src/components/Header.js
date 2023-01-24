@@ -7,18 +7,13 @@ export default function Header() {
     <header>
       <h1>Komis samochodowy</h1>
       <nav>
-        <div>
-          <Link to={"/cars"}>Samochody</Link>
-        </div>
-        <div>
-          <Link to={"/addCar"}>Wystaw ogłoszenie</Link>
-        </div>
-        <div>
-          <Link to={"/contact"}>Kontakt</Link>
-        </div>
-        <div>
-          <Link to={"/"}>Informacje</Link>
-        </div>
+        <Link to={"/cars"}>Samochody</Link>
+
+        <Link to={"/addCar"}>Wystaw ogłoszenie</Link>
+
+        <Link to={"/contact"}>Kontakt</Link>
+
+        <Link to={"/"}>Informacje</Link>
       </nav>
     </header>
   );

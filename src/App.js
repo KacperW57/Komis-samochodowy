@@ -18,7 +18,7 @@ function App() {
         <Aside />
         <main>
           <Routes>
-            <Route index path="/cars" element={<Cars />} />
+            <Route path="/cars" element={<Cars />} />
             <Route path="/addCar" element={<AddCar />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Info />} />
