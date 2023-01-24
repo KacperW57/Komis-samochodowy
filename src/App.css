@@ -70,14 +70,28 @@ header nav {
   display: flex;
 }
 
-header nav div {
+header nav a:link {
   padding: 2vw;
   margin: 0.5vw;
   text-shadow: 1px 1px 1px black;
+  color: white;
+  text-decoration: none;
 }
 
-header nav div:hover {
-  background: linear-gradient(to bottom, rgba(189, 23, 11, 0.5), #0a0403);
+header nav a:visited {
+  padding: 2vw;
+  margin: 0.5vw;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background: linear-gradient(to bottom, rgba(189, 23, 11, 0.4), #0a0403);
+}
+
+header nav a:active {
+  background: linear-gradient(to bottom, rgba(189, 23, 11, 0.8), #0a0403);
 }
 
 /* Cars component styling */
