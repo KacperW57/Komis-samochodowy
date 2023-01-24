@@ -26,7 +26,9 @@ export default function Footer() {
   return (
     <FooterStyled>
       <Para>Project by Kacper Wasilewski</Para>
-      <Link href="#">Github repository</Link>
+      <Link href="https://github.com/KacperW57/Komis-samochodowy">
+        Github repository
+      </Link>
     </FooterStyled>
   );
 }
