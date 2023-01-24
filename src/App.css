@@ -26,13 +26,29 @@ p {
   flex: 1;
   max-width: 20%;
   color: white;
-  border-right: 2px solid grey;
+  border-right: 2px solid rgba(189, 23, 11, 0.1);
   min-height: 85vh;
+  background: linear-gradient(
+    to right,
+    rgba(189, 23, 11, 0.15),
+    #0a0403,
+    #0a0403,
+    #0a0403,
+    rgba(189, 23, 11, 0.15)
+  );
 }
 
 .App main {
   flex: 4;
   min-height: 85vh;
+  background: linear-gradient(
+    to right,
+    rgba(189, 23, 11, 0.15),
+    #0a0403,
+    #0a0403,
+    #0a0403,
+    rgba(189, 23, 11, 0.15)
+  );
 }
 
 .App-link {
@@ -116,12 +132,11 @@ header nav a:active {
 
 .contactContainer {
   color: white;
-  background-color: red;
 }
 
 /* Info component styling */
 
 .infoContainer {
   color: white;
-  background-color: red;
+  text-shadow: 1px 1px 1px red;
 }
