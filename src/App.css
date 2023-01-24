@@ -140,3 +140,7 @@ header nav a:active {
   color: white;
   text-shadow: 1px 1px 1px red;
 }
+
+.infoContainer p {
+  padding: 5px;
+}
