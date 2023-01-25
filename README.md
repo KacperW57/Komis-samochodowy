@@ -10,17 +10,17 @@ It was made using HTML, CSS, React.JS
 
 ## Tools used
 
--create-react-app
--styled-components
--nanoid
--@reduxjs/toolkit
--react-redux
--react-router-dom
--git
+- create-react-app
+- styled-components
+- nanoid
+- @reduxjs/toolkit
+- react-redux
+- react-router-dom
+- git
 
 ## Functionalities
 
--Conditional rendering of main content using navigation buttons, provided by react router
--Listing array items in "Samochody" tab, showing more information after clicking and item
--Filtering items in "Samochody" tab, based on engine type
--Adding new Cars in the "Wystaw ogłoszenie" tab
+- Conditional rendering of main content using navigation buttons, provided by react router
+- Listing array items in "Samochody" tab, showing more information after clicking and item
+- Filtering items in "Samochody" tab, based on engine type
+- Adding new Cars in the "Wystaw ogłoszenie" tab
