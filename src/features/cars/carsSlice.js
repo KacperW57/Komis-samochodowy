@@ -155,7 +155,7 @@ const initialState = [
       "Samochód elektryczny klasy kompaktowej produkowany przez japoński koncern Nissan od 2010 roku. W 2017 roku zadebiutowała druga generacja pojazdu.",
   },
   {
-    id: "16",
+    id: "17",
     engine_type: "Elektryczny",
     producer: "Renault",
     model: "Zoe",
@@ -164,7 +164,7 @@ const initialState = [
       "Elektryczny samochód osobowy klasy miejskiej produkowany pod francuską marką Renault od 2012 roku.",
   },
   {
-    id: "17",
+    id: "18",
     engine_type: "Elektryczny",
     producer: "BMW",
     model: "i3",
@@ -173,7 +173,7 @@ const initialState = [
       "Elektryczny samochód osobowy klasy miejskiej produkowany pod niemiecką marką BMW w latach 2013–2022.",
   },
   {
-    id: "18",
+    id: "19",
     engine_type: "Elektryczny",
     producer: "Tesla",
     model: "Model 3",
@@ -182,7 +182,7 @@ const initialState = [
       "Elektryczny samochód osobowy klasy średniej produkowany pod amerykańską marką Tesla od 2017 roku.",
   },
   {
-    id: "19",
+    id: "20",
     engine_type: "Elektryczny",
     producer: "Dacia",
     model: "Spring",
@@ -191,7 +191,7 @@ const initialState = [
       "Model miejskiego, czteroosobowego auta elektrycznego produkowany przez rumuńską markę Dacia od 2021 roku.",
   },
   {
-    id: "20",
+    id: "21",
     engine_type: "Elektryczny",
     producer: "Fiat",
     model: "500e",

@@ -8,6 +8,7 @@ import Info from "./components/Info";
 import Cars from "./components/Cars";
 import AddCar from "./components/AddCar";
 import Contact from "./components/Contact";
+import SingleCarPage from "./components/SingleCarPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/addCar" element={<AddCar />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<Info />} />
+            <Route path="/cars/:carsId" element={<SingleCarPage />} />
           </Routes>
         </main>
       </div>
