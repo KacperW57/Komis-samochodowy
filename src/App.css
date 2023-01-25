@@ -192,6 +192,41 @@ header nav a:active {
   }
 }
 
+.filterButtons {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.filterBtn {
+  flex: 1;
+  max-width: 20%;
+  padding: 1vw;
+  background: linear-gradient(
+    to bottom,
+    #0a0403,
+    rgba(189, 23, 11, 0.4),
+    #0a0403
+  );
+}
+
+.filterBtn:hover {
+  background: linear-gradient(
+    to bottom,
+    #0a0403,
+    rgba(189, 23, 11, 0.6),
+    #0a0403
+  );
+}
+
+.filterBtn:active {
+  background: linear-gradient(
+    to bottom,
+    #0a0403,
+    rgba(189, 23, 11, 0.3),
+    #0a0403
+  );
+}
+
 /* SingleCar component styling */
 .SingleCar {
   color: white;
