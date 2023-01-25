@@ -118,20 +118,121 @@ header nav a:active {
 
 .carsContainer {
   color: white;
-  background-color: red;
+  text-shadow: 1px 1px 1px red;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.allCarsContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.allCarsListItem {
+  flex: 1;
+  min-width: 20%;
+  margin: 1vw;
+  padding: 1vw;
+  background: linear-gradient(
+      to bottom,
+      rgba(233, 211, 164, 0.2),
+      black,
+      rgba(233, 211, 164, 0.2)
+    ),
+    linear-gradient(
+      to right,
+      rgba(233, 211, 164, 0.2),
+      black,
+      rgba(233, 211, 164, 0.2)
+    );
+  border-radius: 5vw;
+}
+
+.allCarsListItem a:link {
+  padding: 0.7vw;
+  margin: 1vw;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(162, 189, 11, 0.5);
+  border-radius: 5vw;
+}
+
+.allCarsListItem a:hover {
+  box-shadow: inset 2px 2px 2px white, inset -2px -2px 2px black;
+}
+
+.allCarsListItem a:active {
+  box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px white;
+}
+.allCarsListItem a:visited {
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .allCarsContainer {
+    display: block;
+  }
+}
+
+@media (min-width: 426px) {
+  .allCarsContainer {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .allCarsListItem {
+    flex: 1;
+    min-width: 40%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .allCarsListItem {
+    min-width: 20%;
+  }
+}
+
+/* SingleCar component styling */
+.SingleCar {
+  color: white;
+  text-shadow: 1px 1px 1px red;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.SingleCar a:link {
+  padding: 0.7vw;
+  margin: 1vw;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(162, 189, 11, 0.5);
+  border-radius: 5vw;
+}
+
+.SingleCar a:hover {
+  box-shadow: inset 2px 2px 2px white, inset -2px -2px 2px black;
+}
+
+.SingleCar a:active {
+  box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px white;
+}
+.SingleCar a:visited {
+  color: white;
 }
 
 /* AddCar component styling */
 
 .addCarContainer {
   color: white;
-  background-color: red;
+  text-shadow: 1px 1px 1px red;
 }
 
 /* Contact component styling */
 
 .contactContainer {
   color: white;
+  text-shadow: 1px 1px 1px red;
 }
 
 /* Info component styling */
