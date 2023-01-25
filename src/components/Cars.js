@@ -14,6 +14,7 @@ export default function Cars() {
     Hybrydowe: (car) => car.engine_type === "Hybrydowy",
     Elektryczne: (car) => car.engine_type === "Elektryczny",
   };
+  console.log(carsArray);
 
   const carsList = carsArray.filter(FILTER_MAP[renderCars]).map((cars) => {
     return (
