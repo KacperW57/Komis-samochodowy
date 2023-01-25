@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../App.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { removeCar } from "../features/cars/carsSlice";
 
 export default function Cars() {
   const carsArray = useSelector((state) => state.cars);
+  const dispatch = useDispatch();
 
   const [renderCars, setRenderCars] = useState("All");
   const FILTER_MAP = {
@@ -14,11 +16,10 @@ export default function Cars() {
     Hybrydowe: (car) => car.engine_type === "Hybrydowy",
     Elektryczne: (car) => car.engine_type === "Elektryczny",
   };
-  console.log(carsArray);
 
   const carsList = carsArray.filter(FILTER_MAP[renderCars]).map((cars) => {
     return (
-      <div className="allCarsListItem" key={cars.id}>
+      <div className="carsListItem" key={cars.id}>
         <p>
           <strong>Producent: </strong>
           {cars.producer}
@@ -41,6 +42,13 @@ export default function Cars() {
           ...
         </p>
         <Link to={`/cars/${cars.id}`}>Zobacz samochód</Link>
+        <button
+          onClick={() => {
+            dispatch(removeCar(cars.id));
+          }}
+        >
+          Usuń z listy
+        </button>
       </div>
     );
   });
@@ -90,7 +98,7 @@ export default function Cars() {
           Elektryczne
         </div>
       </nav>
-      <div className="allCarsContainer">{carsList}</div>
+      <div className="carsListContainer">{carsList}</div>
     </div>
   );
 }

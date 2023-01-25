@@ -208,9 +208,12 @@ export const carsSlice = createSlice({
     addCar(state, action) {
       state.push(action.payload);
     },
+    removeCar(state, action) {
+      return state.filter((array) => array.id !== action.payload);
+    },
   },
 });
 
-export const { addCar } = carsSlice.actions;
+export const { addCar, removeCar } = carsSlice.actions;
 
 export default carsSlice.reducer;
