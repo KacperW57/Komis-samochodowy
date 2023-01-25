@@ -11,7 +11,8 @@ h3 {
   font-size: 1.5rem;
 }
 
-p {
+p,
+button {
   font-size: 1rem;
 }
 
@@ -36,6 +37,12 @@ p {
     #0a0403,
     rgba(189, 23, 11, 0.15)
   );
+}
+
+@media (max-width: 425px) {
+  .App aside {
+    display: none;
+  }
 }
 
 .App main {
@@ -123,12 +130,12 @@ header nav a:active {
   margin-bottom: 10vh;
 }
 
-.allCarsContainer {
+.carsListContainer {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
 }
-.allCarsListItem {
+.carsListItem {
   flex: 1;
   min-width: 20%;
   margin: 1vw;
@@ -147,8 +154,36 @@ header nav a:active {
     );
   border-radius: 5vw;
 }
+@media (max-width: 425px) {
+  .carsListItem {
+    min-width: 90%;
+  }
+}
+@media (min-width: 426px) {
+  .carsListItem {
+    min-width: 40%;
+  }
+}
 
-.allCarsListItem a:link {
+@media (min-width: 769px) {
+  .carsListItem {
+    min-width: 25%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carsListItem {
+    min-width: 20%;
+  }
+}
+
+@media (min-width: 1441px) {
+  .carsListItem {
+    min-width: 15%;
+  }
+}
+
+.carsListItem a:link {
   padding: 0.7vw;
   margin: 1vw;
   text-shadow: 1px 1px 1px black;
@@ -158,17 +193,35 @@ header nav a:active {
   border-radius: 5vw;
 }
 
-.allCarsListItem a:hover {
+.carsListItem a:hover {
   box-shadow: inset 2px 2px 2px white, inset -2px -2px 2px black;
 }
 
-.allCarsListItem a:active {
+.carsListItem a:active {
   box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px white;
 }
-.allCarsListItem a:visited {
+.carsListItem a:visited {
   color: white;
 }
 
+.carsListItem button {
+  padding: 0.8vw;
+  margin: 1vw;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0.555);
+  border-radius: 5vw;
+  border: none;
+}
+
+.carsListItem button:hover {
+  box-shadow: inset 2px 2px 2px white, inset -2px -2px 2px black;
+}
+
+.carsListItem button:active {
+  box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px white;
+}
 @media (max-width: 425px) {
   .allCarsContainer {
     display: block;
