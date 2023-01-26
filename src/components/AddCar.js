@@ -23,6 +23,7 @@ export default function AddCar() {
         producer: `${producer}`,
         model: `${model}`,
         year: `${year}`,
+        rating: 0,
         description: `${description}`,
       })
     );
