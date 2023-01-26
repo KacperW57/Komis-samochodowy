@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../App.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { removeCar } from "../features/cars/carsSlice";
+import { removeCar, ratingPlus, ratingMinus } from "../features/cars/carsSlice";
+import ArrowUp from "../images/ArrowUp.png";
 
 export default function Cars() {
   const carsArray = useSelector((state) => state.cars);
@@ -41,7 +42,27 @@ export default function Cars() {
           {cars.description.substring(0, 40)}
           ...
         </p>
-        <Link to={`/cars/${cars.id}`}>Zobacz samochód</Link>
+        <p>
+          <strong>Ocena użytkowników: </strong>
+        </p>
+        <div className="reactionContainer">
+          <img
+            src={ArrowUp}
+            alt="arrow up"
+            onClick={() => {
+              dispatch(ratingPlus(cars.id));
+            }}
+          />
+          <p>{cars.rating}</p>
+          <img
+            src={ArrowUp}
+            alt="arrow down"
+            onClick={() => {
+              dispatch(ratingMinus(cars.id));
+            }}
+          />
+        </div>
+        <Link to={`/cars/${cars.id}`}>Zobacz Opis</Link>
         <button
           onClick={() => {
             dispatch(removeCar(cars.id));
