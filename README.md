@@ -25,3 +25,5 @@ It was made using HTML, CSS, React.JS
 - Filtering items in "Samochody" tab, based on engine type
 - Adding new Cars in the "Wystaw ogłoszenie" tab
 - Removing Cars from "Cars" tab
+- Rating cars in "Samochody" tab
+- Side list allowing for choosing a car from every place on site
