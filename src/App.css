@@ -309,6 +309,59 @@ header nav a:active {
   color: white;
 }
 
+.reactionContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 2vh;
+  align-items: center;
+}
+.reactionContainer img {
+  width: 20%;
+  margin: 1vw;
+}
+
+.SingleCar .reactionContainer {
+  width: 35%;
+  margin-left: 32.5%;
+}
+.SingleCar .reactionContainer img {
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .SingleCar .reactionContainer {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media (min-width: 1441px) {
+  .SingleCar .reactionContainer {
+    width: 20%;
+    margin-left: 40%;
+  }
+}
+.reactionContainer img:nth-child(3) {
+  transform: rotate(0.5turn);
+}
+
+.reactionContainer img:nth-child(1):hover {
+  transform: scale(1.2);
+}
+
+.reactionContainer img:nth-child(3):hover {
+  transform: rotate(0.5turn) scale(1.2);
+}
+
+.reactionContainer img:nth-child(1):active {
+  transform: scale(0.8);
+}
+
+.reactionContainer img:nth-child(3):active {
+  transform: rotate(0.5turn) scale(0.8);
+}
 /* AddCar component styling */
 
 .addCarContainer {

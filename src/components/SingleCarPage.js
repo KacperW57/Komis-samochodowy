@@ -2,8 +2,12 @@ import React from "react";
 import "../App.css";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import ArrowUp from "../images/ArrowUp.png";
+import { ratingPlus, ratingMinus } from "../features/cars/carsSlice";
 
 export default function SingleCarPage() {
+  const dispatch = useDispatch();
   const params = useParams();
   const carsId = params.carsId;
 
@@ -41,6 +45,26 @@ export default function SingleCarPage() {
         <strong>Opis: </strong>
         {singleCar.description}
       </p>
+      <p>
+        <strong>Ocena użytkowników: </strong>
+      </p>
+      <div className="reactionContainer">
+        <img
+          src={ArrowUp}
+          alt="arrow up"
+          onClick={() => {
+            dispatch(ratingPlus(singleCar.id));
+          }}
+        />
+        <p>{singleCar.rating}</p>
+        <img
+          src={ArrowUp}
+          alt="arrow down"
+          onClick={() => {
+            dispatch(ratingMinus(singleCar.id));
+          }}
+        />
+      </div>
       <Link to={`/cars`}>Powrót do listy</Link>
     </div>
   );

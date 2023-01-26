@@ -21,6 +21,7 @@ It was made using HTML, CSS, React.JS
 ## Functionalities
 
 - Conditional rendering of main content using navigation buttons, provided by react router
-- Listing array items in "Samochody" tab, showing more information after clicking and item
+- Listing array items in "Samochody" tab, showing more information after clicking an item
 - Filtering items in "Samochody" tab, based on engine type
 - Adding new Cars in the "Wystaw ogłoszenie" tab
+- Removing Cars from "Cars" tab
