@@ -23,7 +23,26 @@ button {
   display: flex;
 }
 
+.App main {
+  flex: 4;
+  min-height: 85vh;
+  background: linear-gradient(
+    to right,
+    rgba(189, 23, 11, 0.15),
+    #0a0403,
+    #0a0403,
+    #0a0403,
+    rgba(189, 23, 11, 0.15)
+  );
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+/* aside settings */
 .App aside {
+  text-shadow: 1px 1px 1px red;
   flex: 1;
   max-width: 20%;
   color: white;
@@ -45,21 +64,77 @@ button {
   }
 }
 
-.App main {
-  flex: 4;
-  min-height: 85vh;
+aside p {
   background: linear-gradient(
-    to right,
-    rgba(189, 23, 11, 0.15),
+    to bottom,
+    rgba(189, 23, 11, 0.6),
     #0a0403,
+    rgba(189, 23, 11, 0.6)
+  );
+  padding: 2vh;
+}
+aside p:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(189, 23, 11, 0.3),
+    #bd2f168f,
+    rgba(189, 23, 11, 0.3)
+  );
+  padding: 2vh;
+}
+aside p:active {
+  background: linear-gradient(
+    to bottom,
+    rgba(189, 23, 11, 0.3),
     #0a0403,
+    rgba(189, 23, 11, 0.3)
+  );
+  padding: 2vh;
+}
+
+aside .hidden {
+  display: none;
+}
+
+aside ul {
+  padding: 0;
+}
+aside li {
+  list-style: none;
+  padding: 0.5vw;
+  margin: 2px;
+}
+
+aside a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5vw;
+  margin: 1px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(189, 23, 11, 0.3),
     #0a0403,
-    rgba(189, 23, 11, 0.15)
+    rgba(189, 23, 11, 0.3)
   );
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+aside a:hover {
+  background: linear-gradient(
+    to bottom,
+    rgba(189, 23, 11, 0.5),
+    #0a0403,
+    rgba(189, 23, 11, 0.5)
+  );
+}
+
+aside a:active {
+  background: linear-gradient(
+    to bottom,
+    rgba(189, 23, 11, 0.2),
+    #0a0403,
+    rgba(189, 23, 11, 0.2)
+  );
 }
 
 /*Header settings */
